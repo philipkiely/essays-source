@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Philip Kiely'
 SITENAME = "Blog"
-SITEURL = ''
+SITEURL = 'https://philipkiely.com/blog'
 
 PATH = 'content'
 
@@ -20,18 +20,16 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = ()
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = ()
 
 DEFAULT_PAGINATION = False
 
-THEME = 'theme'
+THEME = '../theme'
+
+INDEX_SAVE_AS = 'blog.html'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
