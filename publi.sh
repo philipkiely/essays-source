@@ -9,7 +9,7 @@ git add .
 git commit -m "autocommit $1"
 git push
 cp output/*.html ../published-essays
-cp -r output/theme ../published-essays
+cp output/theme ../published-essays/theme
 cd ../published-essays
 rm archives.html authors.html categories.html tags.html
 git add .
