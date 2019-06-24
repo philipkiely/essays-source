@@ -3,8 +3,9 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Philip Kiely'
-SITENAME = "Blog"
-SITEURL = 'https://philipkiely.com/blog'
+SITENAME = "Essays"
+SITEURL = 'https://philipkiely.com/essays'
+
 
 PATH = 'content'
 
@@ -28,8 +29,14 @@ SOCIAL = ()
 DEFAULT_PAGINATION = False
 
 THEME = '../theme'
-
-INDEX_SAVE_AS = 'blog.html'
+TYPOGRIFY = True
+OUTPUT_PATH = '../published-blog'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.tables':{},
+    }
+}
