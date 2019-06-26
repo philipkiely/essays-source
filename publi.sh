@@ -15,3 +15,7 @@ rm archives.html authors.html categories.html tags.html
 git add .
 git commit -m "autocommit $1"
 git push
+cd ~/Code/web/philipkiely.com/theme/
+git add .
+git commit -m "autocommit $1"
+git push
